@@ -1,4 +1,4 @@
-"use client"; // Highlighted in Pale Yellow
+"use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { FaPlus } from "react-icons/fa"; // Import plus icon
@@ -40,7 +40,7 @@ export default function AddNotePage() {
     }
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-[#F5F5F5]">
+        <div className="flex justify-center items-center min-h-screen">
             <div className="w-full max-w-2xl p-8 bg-white shadow-2xl rounded-2xl">
                 <BackButton />
 
@@ -68,7 +68,7 @@ export default function AddNotePage() {
                     onChange={(e) => setContent(e.target.value)}
                     className="w-full p-3 border border-[#CCCCCC] text-[#333333] rounded-lg mb-4 h-40 focus:outline-none focus:ring-2 focus:ring-[#6C9BCF]"
                 />
-                
+
                 <button
                     onClick={addNote}
                     className="w-full flex items-center justify-center gap-2 bg-[#6C9BCF] text-white px-4 py-3 rounded-lg text-lg font-semibold hover:bg-[#5A89C1] transition"
